@@ -1,0 +1,14 @@
+
+El usuario gabriela.he@empresa.com ingresó al sistema en la fecha:
+ * Día: 24. Mes: 4. Año: 2024. Con 11 horas con 15 minutos y 48 segundos. * 
+
+Realizó 3 acciones: 
+
+ * Limpieza - 
+ * Día: 24. Mes: 4. Año: 2024. Con 11 horas con 15 minutos y 49 segundos. *  
+
+ * Limpieza - 
+ * Día: 24. Mes: 4. Año: 2024. Con 11 horas con 15 minutos y 52 segundos. *  
+
+ * Manejo de Logins - 
+ * Día: 24. Mes: 4. Año: 2024. Con 11 horas con 15 minutos y 54 segundos. * 

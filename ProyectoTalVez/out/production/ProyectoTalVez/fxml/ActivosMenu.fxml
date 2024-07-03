@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="rootAM" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerActivos.MenuActivosC">
+   <children>
+      <Pane fx:id="adminMenuPane" layoutX="20.0" layoutY="26.0" prefHeight="451.0" prefWidth="603.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="26.0">
+         <children>
+            <Label fx:id="lblTituloAM" layoutX="71.0" layoutY="41.0" text="Bienvenido" />
+            <Pane fx:id="SWPane" layoutX="53.0" layoutY="84.0" prefHeight="339.0" prefWidth="329.0">
+               <children>
+                  <Label layoutX="84.0" layoutY="14.0" text="Servicios de Software" />
+                  <Button fx:id="btnGCT" layoutX="62.0" layoutY="54.0" mnemonicParsing="false" onAction="#actionGCT" text="Gestion de Cargas de Trabajo" />
+                  <Button fx:id="btnMonitoreo" layoutX="112.0" layoutY="243.0" mnemonicParsing="false" onAction="#actionMonitoreo" text="Monitoreo" />
+                  <Button fx:id="btnBackUp" layoutX="116.0" layoutY="154.0" mnemonicParsing="false" onAction="#actionBackUp" text="Back-Ups" />
+                  <MenuButton fx:id="atGCT" layoutX="21.0" layoutY="87.0" mnemonicParsing="false" onAction="#actionAtGCT" text="Atributos">
+                     <items>
+                        <MenuItem fx:id="catGCT" mnemonicParsing="false" onAction="#actionCatGCT" text="Categoría" />
+                        <MenuItem fx:id="estadoGCT" mnemonicParsing="false" onAction="#actionEstadoGCT" text="Estado" />
+                        <MenuItem fx:id="recursosGCT" mnemonicParsing="false" onAction="#actionRecursosGCT" text="Recursos" />
+                        <MenuItem fx:id="versionGCT" mnemonicParsing="false" onAction="#actionVersionGCT" text="Versión" />
+                     </items>
+                  </MenuButton>
+                  <MenuButton fx:id="atBackUp" layoutX="21.0" layoutY="186.0" mnemonicParsing="false" onAction="#actionAtBackup" text="Atributos">
+                     <items>
+                        <MenuItem fx:id="estadoBackUp" mnemonicParsing="false" onAction="#actionEstadoBackUp" text="Estado" />
+                        <MenuItem fx:id="fechCreacionBackUp" mnemonicParsing="false" onAction="#actionFechCreacionBackUp" text="Fecha Creación" />
+                        <MenuItem fx:id="frecBackUp" mnemonicParsing="false" onAction="#actionFrecBackUp" text="Frecuencia" />
+                        <MenuItem fx:id="versionBackUp" mnemonicParsing="false" onAction="#actionVersionBackUp" text="Versión" />
+                     </items>
+                  </MenuButton>
+                  <MenuButton fx:id="atMonitoreo" layoutX="21.0" layoutY="275.0" mnemonicParsing="false" onAction="#actionAtMonitoreo" text="Atributos">
+                     <items>
+                        <MenuItem fx:id="alertasMonitoreo" mnemonicParsing="false" onAction="#actionAlertasMonitoreo" text="Alertas" />
+                        <MenuItem fx:id="alActivasMonitoreo" mnemonicParsing="false" onAction="#actionAlActivasMonitoreo" text="Alertas Activas" />
+                        <MenuItem fx:id="estadoMonitoreo" mnemonicParsing="false" onAction="#actionEstadoMonitoreo" text="Estado" />
+                        <MenuItem fx:id="versionMonitoreo" mnemonicParsing="false" onAction="#actionVersionMonitoreo" text="Version" />
+                     </items>
+                  </MenuButton>
+                  <TextField fx:id="txtGCT" layoutX="171.0" layoutY="87.0" />
+                  <TextField fx:id="txtBackUp" layoutX="171.0" layoutY="186.0" />
+                  <TextField fx:id="txtMonitoreo" layoutX="171.0" layoutY="275.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="HWPane" layoutX="399.0" layoutY="84.0" prefHeight="329.0" prefWidth="329.0">
+               <children>
+                  <Label layoutX="79.0" layoutY="15.0" text="Servicios de Hardware" />
+                  <Button fx:id="btnAlmacenamiento" layoutX="105.0" layoutY="54.0" mnemonicParsing="false" onAction="#actionAlmacenamiento" text="Almacenamiento" />
+                  <Button fx:id="btnServidor" layoutX="123.0" layoutY="243.0" mnemonicParsing="false" onAction="#actionServidor" text="Servidores" />
+                  <Button fx:id="btnRedes" layoutX="136.0" layoutY="154.0" mnemonicParsing="false" onAction="#actionRedes" text="Redes" />
+                  <TextField fx:id="txtRedes" layoutX="164.0" layoutY="186.0" />
+                  <TextField fx:id="txtAlmacenamiento" layoutX="164.0" layoutY="87.0" />
+                  <TextField fx:id="txtServidores" layoutX="164.0" layoutY="275.0" />
+                  <MenuButton fx:id="atAlmacenamiento" layoutX="21.0" layoutY="87.0" mnemonicParsing="false" onAction="#actionAtAlmacenamiento" text="Atributos">
+                    <items>
+                      <MenuItem fx:id="capAlm" mnemonicParsing="false" onAction="#actionCapAlm" text="Capacidad" />
+                        <MenuItem fx:id="marcaAlm" mnemonicParsing="false" onAction="#actionMarcaAlm" text="Marca" />
+                        <MenuItem fx:id="modeloAlm" mnemonicParsing="false" onAction="#actionModeloAlm" text="Modelo" />
+                        <MenuItem fx:id="numSerieAlm" mnemonicParsing="false" onAction="#actionNumSerieAlm" text="Num. Serie" />
+                        <MenuItem fx:id="tipoAlm" mnemonicParsing="false" onAction="#actionTipoAlm" text="Tipo" />
+                    </items>
+                  </MenuButton>
+                  <MenuButton fx:id="atRedes" layoutX="21.0" layoutY="186.0" mnemonicParsing="false" text="Atributos">
+                     <items>
+                        <MenuItem fx:id="anchoBandRedes" mnemonicParsing="false" onAction="#actionAnchoBandRedes" text="Ancho Banda" />
+                        <MenuItem fx:id="marcaRedes" mnemonicParsing="false" onAction="#actionMarcaRedes" text="Marca" />
+                        <MenuItem fx:id="modeloRedes" mnemonicParsing="false" onAction="#actionModeloRedes" text="Modelo" />
+                        <MenuItem fx:id="numSerieRedes" mnemonicParsing="false" onAction="#actionNumSerieRedes" text="Num. Serie" />
+                        <MenuItem fx:id="tipoConRedes" mnemonicParsing="false" onAction="#actionTipoConRedes" text="Tipo Con." />
+                     </items>
+                  </MenuButton>
+                  <MenuButton fx:id="atServidores" layoutX="21.0" layoutY="275.0" mnemonicParsing="false" text="Atributos">
+                     <items>
+                        <MenuItem fx:id="cantMemoriaServidor" mnemonicParsing="false" onAction="#actionCantMemoriaServidor" text="Cant. Memoria" />
+                        <MenuItem fx:id="marcaServidor" mnemonicParsing="false" onAction="#actionMarcaServidor" text="Marca" />
+                        <MenuItem fx:id="modeloServidor" mnemonicParsing="false" onAction="#actionModeloServidor" text="Modelo" />
+                        <MenuItem fx:id="numSerieServidor" mnemonicParsing="false" onAction="#actionNumSerieServidor" text="Num. Serie" />
+                        <MenuItem fx:id="potenciaServidor" mnemonicParsing="false" onAction="#actionPotenciaServidor" text="Potencia" />
+                     </items>
+                  </MenuButton>
+               </children>
+            </Pane>
+            <Button fx:id="btnVerReporteAc" layoutX="642.0" layoutY="465.0" mnemonicParsing="false" onAction="#actionVerReporteAc" text="Ver Reporte " />
+            <Button fx:id="btnLimpieza" layoutX="578.0" layoutY="30.0" mnemonicParsing="false" onAction="#actionLimpieza" text="Registrar Limpieza" />
+            <Button fx:id="btnManejoLogin" layoutX="359.0" layoutY="435.0" mnemonicParsing="false" onAction="#actionManejoLogin" text="Ver Logins" />
+            <Button fx:id="btnGuardarCambios" layoutX="65.0" layoutY="434.0" mnemonicParsing="false" onAction="#actionGuardarCambios" text="Guardar Cambios" />
+         </children>
+         <stylesheets>
+            <URL value="@../estilos/adminMenu.css" />
+            <URL value="@../estilos/proyectoStyle.css" />
+         </stylesheets>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../estilos/proyectoStyle.css" />
+      <URL value="@../estilos/adminMenu.css" />
+   </stylesheets>
+</AnchorPane>

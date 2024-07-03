@@ -1,0 +1,4 @@
+Daniel Moya;daniel.mo@empresa.com;123456;Administrador
+Maria Perez;maria.pe@empresa.com;000222;Mantenimiento
+Jose Pereira;jose.pe@empresa.com;111222;Limpieza
+Gabriela Herrera;gabriela.he@empresa.com;202020;Programador

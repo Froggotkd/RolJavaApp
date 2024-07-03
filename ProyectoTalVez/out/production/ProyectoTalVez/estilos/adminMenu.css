@@ -1,0 +1,35 @@
+#adminMenuPane, #manejoLoginPane, #progPane, #reportePane{
+    -fx-background-color: rgb(218, 232, 254);
+    -fx-background-radius: 5.0;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+    -fx-border-color: rgb(14, 108, 165);
+    -fx-border-width: 4px;
+    -fx-border-radius: 5.0;
+}
+
+#lblTituloAM, #lblTituloML, #lblTituloProg, #lblTituloR{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+#lblIngreso, #lblAcciones{
+    -fx-font-size: 12px;
+    -fx-background-color: linear-gradient(to bottom, rgb(175, 180, 250), rgb(220, 228, 252));
+}
+
+#btnCancelarAM: hover, #btnSalirML: hover, #btnSalidaR: hover{
+    -fx-background-color: rgb(255, 12, 0);
+    -fx-text-fill: rgb(255, 255, 207);
+}
+
+#HWPane, #SWPane{
+    -fx-background-color: linear-gradient(to bottom, rgb(175, 180, 250), rgb(220, 228, 252));
+    -fx-background-radius: 5.0;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+}
+
+#HWPane: hover, #SWPane: hover{
+    -fx-background-color: linear-gradient(to bottom, rgb(162, 173, 245), rgb(202, 218, 250));
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}

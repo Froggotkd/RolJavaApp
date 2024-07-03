@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReporteC">
+   <children>
+      <Pane fx:id="reportePane" layoutX="38.0" layoutY="12.0" prefHeight="548.0" prefWidth="630.0" stylesheets="@../estilos/proyectoStyle.css" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label fx:id="lblTituloR" layoutX="268.0" layoutY="28.0" text="Bienvenido al reporte" />
+            <Label fx:id="lblIngreso" alignment="TOP_CENTER" layoutX="51.0" layoutY="71.0" prefHeight="73.0" prefWidth="655.0" />
+            <Button fx:id="btnSalidaR" layoutX="680.0" layoutY="462.0" mnemonicParsing="false" onAction="#actionSalidaR" text="Salir" />
+            <Button fx:id="btnMostrarR" layoutX="325.0" layoutY="451.0" mnemonicParsing="false" onAction="#actionMostrarR" text="Mostrar Reporte" />
+            <Label fx:id="lblAcciones" alignment="TOP_CENTER" layoutX="51.0" layoutY="162.0" prefHeight="282.0" prefWidth="655.0" />
+            <Line endX="470.0" layoutX="232.0" layoutY="152.0" startX="-181.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.07407407462596893" green="0.036549706012010574" blue="0.19736842811107635" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.15809999406337738" green="0.702105700969696" blue="0.9300000071525574" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../estilos/proyectoStyle.css" />
+      <URL value="@../estilos/adminMenu.css" />
+   </stylesheets>
+</AnchorPane>

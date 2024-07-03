@@ -1,0 +1,25 @@
+#lblTitulo{
+    -fx-font-size: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(3, 10, 26, 0.2), 10, 0, 0, 0);
+    -fx-font-weight: bold;
+
+}
+#btnCancelar:hover{
+    -fx-background-color: rgb(211, 0, 0);
+    -fx-text-fill: rgb(255, 255, 207);
+
+}
+
+#lblFondo{
+    -fx-background-color: linear-gradient(to bottom, rgb(171, 174, 222), rgb(220, 228, 252));
+    -fx-background-radius: 5%;
+    -fx-effect: dropshadow(gaussian, rgba(0, 15, 24, 1), 10, 0, 0, 0);
+
+}
+#lblFondo:hover{
+    -fx-background-color: linear-gradient(to bottom, rgb(162, 173, 245), rgb(202, 218, 250));
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+

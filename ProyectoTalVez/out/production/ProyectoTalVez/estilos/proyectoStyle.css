@@ -1,0 +1,22 @@
+.root {
+    -fx-background-image: url("file:///C:/Users/User/Desktop/OOP%20Java/ProyectoTalVez/src/imagenes/bg.jpg");
+    -fx-background-size: cover;
+}
+
+.label{
+    -fx-font-family: "Eras Bold ITC";
+    -fx-font-size: 15px;
+}
+
+.button{
+    -fx-background-color: rgb(218, 232, 254);
+    -fx-font-family: "Eras Bold ITC";
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+}
+
+.button:hover{
+    -fx-background-color: rgb(11, 13, 70);
+    -fx-text-fill: rgb(197, 215, 255);
+}
+
